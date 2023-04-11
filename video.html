@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		.container {
+  position: relative;
+  height: 700px;
+}
+
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.form-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  max-width: 500px;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+
+}
+
+form {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+form button[type="submit"] {
+	background-color: #c00;
+	color: #fff;
+	padding: 10px;
+	border: none;
+	cursor: pointer;
+
+}
+
+form button[type="submit"]:hover {
+	background-color: #fff;
+	color: #c00;
+}
+
+	</style>
+</head>
+<body>
+ <div class="container">
+  <video class="bg-video" autoplay loop muted>
+    <source src="C:\Users\isdx\Downloads\pexels-tom-fisk-3285785-3840x2160-30fps.mp4">
+  </video>
+  <div class="form-container">
+    <form>
+      <!-- your real estate form goes here -->
+      <label for="property-name">Property Name:</label>
+  <input type="text" name="property-name" id="property-name" required><br/><br/>
+
+  <label for="property-description">Property Description:</label>
+  <textarea name="property-description" id="property-description" required></textarea><br/><br/>
+
+  <label for="property-price">Property Price:</label>
+  <input type="number" name="property-price" id="property-price" required><br/><br/>
+
+  <label for="property-image">upload Image:</label>
+  <input type="file" name="property-image" id="property-image" required><br/><br/>
+
+  <button type="submit">Submit Property Details</button>
+    </form>
+  </div>
+</div>
+<script type="text/javascript">
+	// This code is optional and can be used to pause the video when the form is in focus
+const video = document.querySelector(".bg-video");
+const form = document.querySelector("form");
+
+form.addEventListener("focusin", () => {
+  video.pause();
+});
+
+form.addEventListener("focusout", () => {
+  video.play();
+});
+
+</script>
+</body>
+</html>

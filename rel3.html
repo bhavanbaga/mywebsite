@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+		body{
+			background-image:url("https://t3.ftcdn.net/jpg/03/55/60/70/360_F_355607062_zYMS8jaz4SfoykpWz5oViRVKL32IabTP.jpg");
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+		.signin-container {
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+form {
+  text-align: left;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.or-container {
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+hr {
+  width: 40%;
+  height: 1px;
+  background-color: black;
+  border: none;
+  margin: 0 10px;
+}
+
+.social-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-container a {
+  display: block;
+  width: 100%;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.social-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  height: 50px;
+  background-color:#6495ED;
+  border-radius: 7px;
+  transition: background-color .3s ease-in-out;
+}
+
+.social-box:hover {
+  background-color:white;
+}
+
+.social-box img {
+  width: 30px;
+  height: 30px;
+  margin-right: 8px;
+}
+
+.social-box span {
+  font-size: 16px;
+  font-style:initial;
+}
+
+	</style>
+</head>
+<body>
+	<div class="signin-container">
+  <h2>Log in</h2>
+  <form>
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input type="email" placeholder="Email" id="email" name="email" required>
+    </div>
+    <div class="form-group">
+      <label for="password">Password</label>
+      <input type="password"   placeholder="Password" id="password" name="password" required>
+    </div>
+    <div class="form-group">
+      <button type="submit">Log in</button>
+    </div>
+  </form>
+  <div class="or-container">
+    <hr>
+    <span>OR</span>
+    <hr>
+  </div>
+  <div class="social-container">
+    <a href="#" class="google">
+      <div class="social-box">
+        <img src="https://img.freepik.com/free-psd/google-icon-isolated-3d-render-illustration_47987-9777.jpg?w=2000" alt="google">
+        <span> Sign In with Google</span>
+      </div>
+    </a>
+    <a href="#" class="facebook">
+      <div class="social-box">
+        <img src="https://img.freepik.com/premium-vector/blue-social-media-logo_197792-1759.jpg?w=2000" alt="Facebook">
+        <span> Sign In with Facebook</span>
+      </div>
+    </a>
+  </div>
+</div>
+
+
+</body>
+</html>
